@@ -1,4 +1,4 @@
-// exercice creer un questionnaire intercatif
+// exercice creer un questionnaire intercatif voir: https://www.weformyou.fr/formations/javascript/questionnaire-interactif
 
 const questions = [
     {
@@ -6,7 +6,7 @@ const questions = [
         reponse: 2
     },
     {
-        question:'Quelle est la capitale de l\autriche ?\n1. Vienne\n2. Oslo',
+        question:'Quelle est la capitale de l\'autriche ?\n1. Vienne\n2. Oslo',
         reponse: 1
         
     },
@@ -31,4 +31,8 @@ for (let i = 0; i < questions.length; i += 1) {
     }    
 }
 
-alert(`Vous avez ${nbBonneReponse} bonnes réponses sur ${questions.length}`);
+if (nbBonneReponse <= 1){
+    alert(`Vous avez ${nbBonneReponse} bonne réponse sur ${questions.length}`); 
+} else {
+    alert(`Vous avez ${nbBonneReponse} bonnes réponses sur ${questions.length}`);
+};
